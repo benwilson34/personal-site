@@ -1,0 +1,16 @@
+<script>hljs.initHighlightingOnLoad();</script>
+
+<p>I made this web browser as part of an assignment in October 2017. The browser was to make use of Fragments, support having several tabs opened, and allow a user to&nbsp;change&nbsp;tabs by swiping left or right. It also needed to be able to be set as the user's default web browser, and allow other apps to use it to open links.</p>
+
+<p>Fragments in Android are perfect for this application - there is only one activity (the <a href="https://github.com/benwilson34/WebTabs/blob/master/app/src/main/java/edu/temple/webtabs/MainActivity.java">MainActivity</a>) and each tab is a Fragment (called a TabFragment) that manages a WebView, which is what the webpage is shown through. Fragment communication is key here because the TabFragment knows nothing about the Activity, just how to manage itself. There are two avenues of communication: Activity&nbsp;→ Fragment, using a public method in the Fragment; and&nbsp;Fragment&nbsp;→&nbsp;Activity, which uses an interface. In the second case, the Activity managing the Fragment needs to implement the interface so that it can accept the method calls from the Fragment. There is no compile-time requirement that the Activity implement this interface, so to prevent errors down the line I throw an error in in TabFragment's OnAttach method:</p>
+
+<pre>
+<code class="language-java">@Override
+public void onAttach(Context context) {{'{'}}
+   super.onAttach(context);
+   if (context instanceof OnFragmentInteractionListener) {{'{'}}
+      mListener = (OnFragmentInteractionListener) context;
+   } else {{'{'}}
+      throw new RuntimeException(context.toString() + " must implement OnFragmentInteractionListener");
+   }
+}</code></pre>

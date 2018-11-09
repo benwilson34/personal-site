@@ -1,23 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <table><tr>
-    <td><a routerLink="/home">Home</a></td>
-    <td><a routerLink="/projects">Projects</a></td>
-    <td><a routerLink="/resume">Resume</a></td>
-    <td><a routerLink="/blog">Blog</a></td>
-  </tr></table>
+<div id="nav-area" class="center-area">
+  <h1><a routerLink="/home">
+    {{ title }}
+  </a></h1>
+  <div id="nav-bar">
+    <div><a routerLink="/projects">Projects</a></div>
+    <div><a routerLink="/resume">Resume</a></div>
+    <div><a routerLink="/blog">Blog</a></div>
+  </div>
 </div>
 
+<div id="content-area" class="center-area">
+  <router-outlet></router-outlet>
+</div>
 
-<router-outlet></router-outlet>
-
-
-<table><tr>
-    <td><a routerLink="/home">TODO social links down here</a></td>
-    <td><a routerLink="/projects">Projects</a></td>
-    <td><a routerLink="/resume">Resume</a></td>
-    <td><a routerLink="/blog">Blog</a></td>
-  </tr></table>
+<div id="footer-area" class="center-area">
+  <div id="link-bar">
+    <div><a href="https://twitter.com/benjawmino">Twitter</a></div>
+    <div><a href="https://github.com/benwilson34">GitHub</a></div>
+    <div><a href="https://instagram.com/benjawmino">Instagram</a></div>
+    <div><a href="https://www.linkedin.com/in/benjamin-wilson-10b743b9/">LinkedIn</a></div>
+  </div>
+</div>

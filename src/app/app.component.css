@@ -1,0 +1,36 @@
+#nav-area {
+	text-align: center;
+}
+#nav-bar {
+	margin: 0px auto;
+}
+#nav-bar div {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.center-area {
+	width: 80%;
+	margin: 0px auto;
+}
+
+#content-area {
+	background-color: lightblue;
+}
+
+#footer-area {
+	text-align: center;
+}
+#link-bar {
+	margin: 0px auto;
+}
+#link-bar div {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+	#content-area {
+
+	}
+}
