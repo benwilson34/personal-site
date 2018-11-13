@@ -1,9 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Share+Tech');
+
+html,body {
+	background-color: #eee;
+}
+
 a:link,a:hover,a:active,a:visited {
 	text-decoration: none;
 	color: red;
 }
 a:hover {
-	text-decoration: underline;
-	color: blue;
+	/*text-decoration: underline;*/
+	color: #bb0000;
+}
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Share Tech', sans-serif;
 }

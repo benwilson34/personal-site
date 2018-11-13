@@ -1,36 +1,78 @@
-#nav-area {
+#header-area {
+	/*margin-top: 40px;*/
+	/*margin-bottom: 10px;*/
+}
+#title-block {
+
+	box-sizing: border-box;
 	text-align: center;
-}
-#nav-bar {
-	margin: 0px auto;
-}
-#nav-bar div {
 	display: inline-block;
-	padding: 0px 20px;
+	width: 24%;
 }
+	#circle {
+		height: 180px;
+		width: 180px;
+		margin: 0px auto;
+		border: 2px solid black;
+		border-radius: 50%;
+	}
+	#title {
+		font-size: 38px;
+		/*position: relative;
+		top: 15px;*/
+	}
+	#subtitle {
+		position: relative;
+		top: -20px;
+	}
+#nav-bar {
+	position: relative;
+	top: -40px;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 38%;
+	/*margin: 0px auto;*/
+}
+	#nav-bar div {
+		display: inline-block;
+		padding: 0px 10px;
+	}
+#link-bar {
+	/*margin-bottom: 15px;*/
+	position: relative;
+	top: -40px;
+	text-align: right;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 38%;
+}
+	#link-bar div {
+		display: inline-block;
+		padding: 0px 10px;
+	}
+
 
 .center-area {
-	width: 80%;
+	box-sizing: border-box;
+	min-width: 600px;
+  max-width: 950px;
 	margin: 0px auto;
 }
 
 #content-area {
-	background-color: lightblue;
+	border: 1px solid #ccc;
+	min-height: 300px;
+	padding: 40px;
 }
 
 #footer-area {
+	margin-top: 30px;
 	text-align: center;
 }
-#link-bar {
-	margin: 0px auto;
-}
-#link-bar div {
-	display: inline-block;
-	padding: 0px 20px;
-}
 
-@media only screen and (max-width: 1000px) {
-	#content-area {
 
+@media only screen and (max-width: 1100px) {
+	.center-area {
+		width: 80%;
 	}
 }
