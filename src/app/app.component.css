@@ -1,13 +1,14 @@
 #header-area {
 	/*margin-top: 40px;*/
 	/*margin-bottom: 10px;*/
+	width: 80%;
+	display: flex;
+	align-items: flex-end;
 }
 #title-block {
-
+	flex: 0 0 200px;
 	box-sizing: border-box;
 	text-align: center;
-	display: inline-block;
-	width: 24%;
 }
 	#circle {
 		height: 180px;
@@ -26,12 +27,11 @@
 		top: -20px;
 	}
 #nav-bar {
-	position: relative;
-	top: -40px;
+	flex: 1 0 80px;
+	/*position: relative;
+	top: -40px;*/
+	margin-bottom: 18px;
 	box-sizing: border-box;
-	display: inline-block;
-	width: 38%;
-	/*margin: 0px auto;*/
 }
 	#nav-bar div {
 		display: inline-block;
@@ -39,16 +39,19 @@
 	}
 #link-bar {
 	/*margin-bottom: 15px;*/
-	position: relative;
-	top: -40px;
+	flex: 1 0 80px;
+	/*position: relative;
+	top: -40px;*/
 	text-align: right;
 	box-sizing: border-box;
-	display: inline-block;
-	width: 38%;
 }
 	#link-bar div {
 		display: inline-block;
 		padding: 0px 10px;
+	}
+	#link-bar img {
+		height: 40px;
+		width: auto;
 	}
 
 
