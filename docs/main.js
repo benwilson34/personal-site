@@ -99,7 +99,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#nav-area {\r\n\ttext-align: center;\r\n}\r\n#nav-bar {\r\n\tmargin: 0px auto;\r\n}\r\n#nav-bar div {\r\n\tdisplay: inline-block;\r\n\tpadding: 0px 20px;\r\n}\r\n.center-area {\r\n\twidth: 80%;\r\n\tmargin: 0px auto;\r\n}\r\n#content-area {\r\n\tbackground-color: lightblue;\r\n}\r\n#footer-area {\r\n\ttext-align: center;\r\n}\r\n#link-bar {\r\n\tmargin: 0px auto;\r\n}\r\n#link-bar div {\r\n\tdisplay: inline-block;\r\n\tpadding: 0px 20px;\r\n}\r\n@media only screen and (max-width: 1000px) {\r\n\t#content-area {\r\n\r\n\t}\r\n}"
+module.exports = "#header-area {\r\n\t/*margin-top: 40px;*/\r\n\t/*margin-bottom: 10px;*/\r\n\twidth: 80%;\r\n\tdisplay: flex;\r\n\talign-items: flex-end;\r\n}\r\n#title-block {\r\n\tflex: 0 0 200px;\r\n\tbox-sizing: border-box;\r\n\ttext-align: center;\r\n}\r\n#circle {\r\n\t\theight: 180px;\r\n\t\twidth: 180px;\r\n\t\tmargin: 0px auto;\r\n\t\tborder: 2px solid black;\r\n\t\tborder-radius: 50%;\r\n\t}\r\n#title {\r\n\t\tfont-size: 38px;\r\n\t\t/*position: relative;\r\n\t\ttop: 15px;*/\r\n\t}\r\n#subtitle {\r\n\t\tposition: relative;\r\n\t\ttop: -20px;\r\n\t}\r\n#nav-bar {\r\n\tflex: 1 0 80px;\r\n\t/*position: relative;\r\n\ttop: -40px;*/\r\n\tmargin-bottom: 18px;\r\n\tbox-sizing: border-box;\r\n}\r\n#nav-bar div {\r\n\t\tdisplay: inline-block;\r\n\t\tpadding: 0px 10px;\r\n\t}\r\n#link-bar {\r\n\t/*margin-bottom: 15px;*/\r\n\tflex: 1 0 80px;\r\n\t/*position: relative;\r\n\ttop: -40px;*/\r\n\ttext-align: right;\r\n\tbox-sizing: border-box;\r\n}\r\n#link-bar div {\r\n\t\tdisplay: inline-block;\r\n\t\tpadding: 0px 10px;\r\n\t}\r\n#link-bar img {\r\n\t\theight: 40px;\r\n\t\twidth: auto;\r\n\t}\r\n.center-area {\r\n\tbox-sizing: border-box;\r\n\tmin-width: 600px;\r\n  max-width: 950px;\r\n\tmargin: 0px auto;\r\n}\r\n#content-area {\r\n\tborder: 1px solid #ccc;\r\n\tmin-height: 300px;\r\n\tpadding: 40px;\r\n}\r\n#footer-area {\r\n\tmargin-top: 30px;\r\n\ttext-align: center;\r\n}\r\n@media only screen and (max-width: 1100px) {\r\n\t.center-area {\r\n\t\twidth: 80%;\r\n\t}\r\n}"
 
 /***/ }),
 
@@ -110,7 +110,7 @@ module.exports = "#nav-area {\r\n\ttext-align: center;\r\n}\r\n#nav-bar {\r\n\tm
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div id=\"nav-area\" class=\"center-area\">\n  <h1><a routerLink=\"/home\">\n    {{ title }}\n  </a></h1>\n  <div id=\"nav-bar\">\n    <div><a routerLink=\"/projects\">Projects</a></div>\n    <div><a routerLink=\"/resume\">Resume</a></div>\n    <div><a routerLink=\"/blog\">Blog</a></div>\n  </div>\n</div>\n\n<div id=\"content-area\" class=\"center-area\">\n  <router-outlet></router-outlet>\n</div>\n\n<div id=\"footer-area\" class=\"center-area\">\n  <div id=\"link-bar\">\n    <div><a href=\"https://twitter.com/benjawmino\">Twitter</a></div>\n    <div><a href=\"https://github.com/benwilson34\">GitHub</a></div>\n    <div><a href=\"https://instagram.com/benjawmino\">Instagram</a></div>\n    <div><a href=\"https://www.linkedin.com/in/benjamin-wilson-10b743b9/\">LinkedIn</a></div>\n  </div>\n</div>"
+module.exports = "<div id=\"header-area\" class=\"center-area\">\n  <div id=\"nav-bar\">\n    <div><a routerLink=\"/projects\">Projects</a></div>\n    <div><a routerLink=\"/resume\">Resume</a></div>\n    <div><a routerLink=\"/blog\">Blog</a></div>\n    <div><a routerLink=\"/home\">Contact</a></div>\n  </div>\n\n  <div id=\"title-block\">\n    <!-- <div id=\"circle\"> -->\n      <h1 id=\"title\"><a routerLink=\"/home\">\n        BEN WILSON\n      </a></h1>\n      <p id=\"subtitle\">{{typedSubtitle}}</p>\n    <!-- </div> -->\n  </div>\n\n  <div id=\"link-bar\">\n    <div><a href=\"https://github.com/benwilson34\">\n      <img src=\"assets\\Social Media Icons\\PNG\\Circle Grey\\Github.png\" />\n    </a></div>\n    <div><a href=\"https://www.linkedin.com/in/benjamin-wilson-10b743b9/\">\n      <img src=\"assets\\Social Media Icons\\PNG\\Circle Grey\\Linkedin.png\" />\n    </a></div>\n    <div><a href=\"https://twitter.com/benjawmino\">\n      <img src=\"assets\\Social Media Icons\\PNG\\Circle Grey\\Twitter.png\" />\n    </a></div>\n    <div><a href=\"https://instagram.com/benjawmino\">\n      <img src=\"assets\\Social Media Icons\\PNG\\Circle Grey\\Instagram.png\" />\n    </a></div>\n  </div>\n</div>\n\n<div id=\"content-area\" class=\"center-area\">\n  <router-outlet></router-outlet>\n</div>\n\n<div id=\"footer-area\" class=\"center-area\">\n  &copy; 2018 Benjamin Wilson\n  <p><a href=\"https://www.Vecteezy.com/\">Graphics Provided by Vecteezy</a></p>\n</div>"
 
 /***/ }),
 
@@ -135,7 +135,25 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'Ben Wilson';
+        this.subtitle = "Software Developer";
+        this.typedSubtitle = "";
+        this.typeIndex = 0;
     }
+    AppComponent.prototype.ngOnInit = function () {
+        this.typeOutSubtitle();
+    };
+    AppComponent.prototype.typeOutSubtitle = function () {
+        var _this = this;
+        console.log("starting...");
+        var interval = 100; // 10 chars/sec
+        var typeAnim = setInterval(function () {
+            if (_this.typeIndex < _this.subtitle.length)
+                _this.typeIndex++;
+            else
+                clearInterval(typeAnim);
+            _this.typedSubtitle = _this.subtitle.substring(0, _this.typeIndex);
+        }, interval);
+    };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
@@ -308,7 +326,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n\tHello and welcome to my personal site! Visit the <a href=\"projects\">Projects</a> page to see a list of select projects I've worked on the last few years.\n</p>"
+module.exports = "<p>\n\tHello and welcome to my personal site! Visit the <a href=\"projects\">Projects</a> page to see a list of select projects I've worked on the last few years.\n</p>\n\n<p>\n\tI am available for work, email me at <a href=\"mailto:ben.wilson1337@gmail.com\">ben.wilson1337@gmail.com</a> for more information.\n</p>"
 
 /***/ }),
 

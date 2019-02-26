@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\na:link,a:hover,a:active,a:visited {\n\ttext-decoration: none;\n\tcolor: red;\n}\na:hover {\n\ttext-decoration: underline;\n\tcolor: blue;\n}"
+module.exports = "@import url('https://fonts.googleapis.com/css?family=Montserrat|Share+Tech');\n\nhtml,body {\n\tbackground-color: #eee;\n}\n\na:link,a:hover,a:active,a:visited {\n\ttext-decoration: none;\n\tcolor: red;\n}\n\na:hover {\n\t/*text-decoration: underline;*/\n\tcolor: #bb0000;\n}\n\n* {\n\tfont-family: 'Montserrat', sans-serif;\n}\n\nh1,h2,h3,h4,h5,h6 {\n\tfont-family: 'Share Tech', sans-serif;\n}"
 
 /***/ }),
 
