@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ngh"
+    "nghbuild": "ng build --prod --base-href \"https://benwilson34.github.io/personal-site\"",
+    "deploy": "npx angular-cli-ghpages --no-silent --dir /docs --name=\"benwilson34\" --email=ben.wilson1337@gmail.com"
   },
   "private": true,
   "dependencies": {
