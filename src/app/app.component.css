@@ -1,79 +1,98 @@
-#header-area {
-	/*margin-top: 40px;*/
-	/*margin-bottom: 10px;*/
-	width: 80%;
+#app-view {
 	display: flex;
-	align-items: flex-end;
+	height: 100%;
+	width: 100%;
 }
+
+#side-bar {
+	flex: 0 0 375px;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0px 58px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
 #title-block {
-	flex: 0 0 200px;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	flex: 0;
 	box-sizing: border-box;
 	text-align: center;
 }
-	#circle {
-		height: 180px;
-		width: 180px;
-		margin: 0px auto;
-		border: 2px solid black;
-		border-radius: 50%;
-	}
-	#title {
-		font-size: 38px;
-		/*position: relative;
-		top: 15px;*/
-	}
-	#subtitle {
-		position: relative;
-		top: -20px;
-	}
+		#title {
+			font-size: 32px;
+			font-weight: bold;
+		}
+		#subtitle {
+			position: relative;
+			top: -20px;
+			height: 25px;
+		}
 #nav-bar {
-	flex: 1 0 80px;
-	/*position: relative;
-	top: -40px;*/
-	margin-bottom: 18px;
+	flex: 1;
 	box-sizing: border-box;
-}
-	#nav-bar div {
-		display: inline-block;
-		padding: 0px 10px;
-	}
-#link-bar {
-	/*margin-bottom: 15px;*/
-	flex: 1 0 80px;
-	/*position: relative;
-	top: -40px;*/
 	text-align: right;
-	box-sizing: border-box;
 }
-	#link-bar div {
-		display: inline-block;
-		padding: 0px 10px;
-	}
-	#link-bar img {
-		height: 40px;
-		width: auto;
-	}
+		#nav-bar div {
+			font-size: 17px;
+			margin-bottom: 18px;
+		}
+#link-bar {
+	box-sizing: border-box;
+	text-align: center;
+}
+		#link-bar div {
+			display: inline-block;
+			padding: 0px 10px;
+		}
+		#link-bar img {
+			height: 40px;
+			width: auto;
+		}
+#footer-area {
+	margin-top: 12px;
+	margin-bottom: 30px;
+	font-size: 12px;
+	color: #aaa;
+	text-align: center;
+}
+		#footer-area > a {
+			color: #666;
+		}
 
 
-.center-area {
-	box-sizing: border-box;
-	min-width: 600px;
-  max-width: 950px;
-	margin: 0px auto;
+#vert-rule {
+	margin-top: 84px;
+	margin-bottom: 30px;
+	border-left: 1px solid #ccc;
 }
+
 
 #content-area {
-	border: 1px solid #ccc;
-	min-height: 300px;
-	padding: 40px;
-}
+	flex: 1;
+	height: 100%;
+	overflow: auto;
 
-#footer-area {
-	margin-top: 30px;
-	margin-bottom: 20px;
-	font-size: 12px;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+		#content {
+			flex: 0 0 800px;
+			min-width: 800px;
+			max-width: 800px;
+			box-sizing: border-box;
+			margin: 60px 40px 100px 40px;
+			padding: 40px 100px;
+
+			background-color: white;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			/*font-size: 14px;*/
+		}
 
 
 @media only screen and (max-width: 1100px) {

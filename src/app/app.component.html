@@ -1,20 +1,19 @@
-<div id="header-area" class="center-area">
+<div id='app-view'>
+
+<div id='side-bar'>
+  <div id="title-block">
+    <div id="title"><a routerLink="/home">
+      BEN WILSON
+    </a></div>
+    <p id="subtitle">{{typedSubtitle}}</p>
+  </div>
   <div id="nav-bar">
     <div><a routerLink="/projects">Projects</a></div>
-    <div><a routerLink="/resume">Resume</a></div>
+    <div><a routerLink="/resume">Résumé</a></div>
     <div><a routerLink="/blog">Blog</a></div>
     <div><a routerLink="/home">Contact</a></div>
   </div>
-
-  <div id="title-block">
-    <!-- <div id="circle"> -->
-      <h1 id="title"><a routerLink="/home">
-        BEN WILSON
-      </a></h1>
-      <p id="subtitle">{{typedSubtitle}}</p>
-    <!-- </div> -->
-  </div>
-
+  
   <div id="link-bar">
     <div><a href="https://github.com/benwilson34">
       <img src="assets\Social Media Icons\PNG\Circle Grey\Github.png" />
@@ -22,19 +21,24 @@
     <div><a href="https://www.linkedin.com/in/benjamin-wilson-10b743b9/">
       <img src="assets\Social Media Icons\PNG\Circle Grey\Linkedin.png" />
     </a></div>
-    <!-- <div><a href="https://twitter.com/benjawmino">
-      <img src="assets\Social Media Icons\PNG\Circle Grey\Twitter.png" />
-    </a></div> -->
     <div><a href="https://instagram.com/benjawmino">
       <img src="assets\Social Media Icons\PNG\Circle Grey\Instagram.png" />
     </a></div>
   </div>
+
+  <div id="footer-area">
+    &copy; 2019 Benjamin Wilson<br>
+    Graphics provided by <a href="https://www.Vecteezy.com/">Vecteezy</a>
+  </div>
 </div>
 
-<div id="content-area" class="center-area">
-  <router-outlet></router-outlet>
+<div id='vert-rule'></div>
+
+
+<div id='content-area'>
+  <div id='content'>
+    <router-outlet></router-outlet>
+  </div>
 </div>
 
-<div id="footer-area" class="center-area">
-  &copy; 2018 Benjamin Wilson &nbsp;|&nbsp; Graphics provided by <a href="https://www.Vecteezy.com/">Vecteezy</a>
 </div>
